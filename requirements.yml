@@ -1,2 +1,3 @@
+---
 - src: https://github.com/morbidick/ansible-dnsmasq
   name: dnsmasq

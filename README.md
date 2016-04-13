@@ -2,6 +2,7 @@
 
 currently only used for the main server felix.
 
+
 ## General
 
 ```` bash
@@ -12,7 +13,7 @@ ansible-galaxy install -r requirements.yml -p roles
 vagrant up
 
 # reprovision test system
-vagrant reload --provision
+ansible-playbook -i .vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory felix.yml --user=vagrant
 ````
 
 
@@ -20,5 +21,5 @@ vagrant reload --provision
 
 ```` bash
 # provision live system
-ansible-playbook -i hosts felix.yml --user=felix --ask-sudo-pass
+ansible-playbook -i hosts felix.yml --ask-sudo-pass
 ````
