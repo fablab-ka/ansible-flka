@@ -7,3 +7,17 @@
     - dnsmasq_domain: lab.flka.de
     - dnsmasq_expand_hosts: true
     - dnsmasq_listen_address: 192.168.1.6
+    - dnsmasq_option_router: 192.169.1.1
+    - dnsmasq_dhcp_hosts:
+      - name: brother #Laserdrucker
+        mac: 00:80:77:01:64:3B
+        ip: 192.168.1.2
+      - name: wamme #Plotter hp800
+        mac: 00:30:C1:61:7C:EA
+        ip: 192.168.1.3
+      - name: kotlett #Labelprinter cab a3
+        mac: 00:00:00:00:00:00
+        ip: 192.168.1.4
+      - name: lasersaur
+        mac: C8:A0:30:A5:9E:AF
+        ip: 192.168.1.7
