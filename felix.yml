@@ -1,0 +1,9 @@
+---
+- hosts: felix
+  become: yes
+  roles:
+    - dnsmasq
+  vars:
+    - dnsmasq_domain: lab.flka.de
+    - dnsmasq_expand_hosts: true
+    - dnsmasq_listen_address: 192.168.1.6
