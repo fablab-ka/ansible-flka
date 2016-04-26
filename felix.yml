@@ -4,6 +4,7 @@
   roles:
     - common
     - dnsmasq
+    - youtube-dl
 
   vars:
     - dnsmasq_domain: lab.flka.de
@@ -53,3 +54,5 @@
         ip: 192.168.1.6
       - name: labnet
         ip: 192.168.1.6
+
+    - youtubedl_update: true

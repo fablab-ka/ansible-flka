@@ -4,3 +4,6 @@
 
 - src: https://github.com/morbidick/ansible-role-dnsmasq
   name: dnsmasq
+
+- src: https://github.com/morbidick/ansible-role-youtube-dl
+  name: youtube-dl
