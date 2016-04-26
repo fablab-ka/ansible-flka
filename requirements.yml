@@ -1,3 +1,6 @@
 ---
-- src: https://github.com/morbidick/ansible-dnsmasq
+- src: https://github.com/morbidick/ansible-role-common
+  name: common
+
+- src: https://github.com/morbidick/ansible-role-dnsmasq
   name: dnsmasq

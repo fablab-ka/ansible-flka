@@ -14,6 +14,9 @@ vagrant up
 
 # reprovision test system
 ansible-playbook -i .vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory felix.yml --user=vagrant
+
+# list all available facts for a host
+ansible -m setup hostname
 ````
 
 

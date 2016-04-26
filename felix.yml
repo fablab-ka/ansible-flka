@@ -2,7 +2,9 @@
 - hosts: felix
   become: yes
   roles:
+    - common
     - dnsmasq
+
   vars:
     - dnsmasq_domain: lab.flka.de
     - dnsmasq_expand_hosts: true
