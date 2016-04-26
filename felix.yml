@@ -6,53 +6,8 @@
     - dnsmasq
     - youtube-dl
 
+  vars_files:
+    - vars/network.yml
+
   vars:
-    - dnsmasq_domain: lab.flka.de
-    - dnsmasq_expand_hosts: true
-    - dnsmasq_option_gateway: 192.168.1.1
-
-    - dnsmasq_dhcp_ranges:
-      - start_addr: 192.168.1.50
-        end_addr: 192.168.1.255
-        lease_time: 24h
-
-    - dnsmasq_dhcp_hosts:
-      #Laserdrucker
-      - name: brother
-        mac: 2C:33:7A:55:33:7F
-        ip: 192.168.1.2
-      #Plotter hp800
-      - name: wamme
-        mac: 00:30:C1:61:7C:EA
-        ip: 192.168.1.3
-      #Labelprinter cab eos1
-      - name: federstueck
-        mac: 00:02:E7:03:7F:5A
-        ip: 192.168.1.5
-      #Lasersaur
-      - name: lasersaur
-        mac: C8:A0:30:A5:9E:AF
-        ip: 192.168.1.7
-      #Astroprint Server
-      - name: grillfackel
-        mac: B8:27:EB:0D:0F:10
-        ip: 192.168.1.8
-      #Hauptschalter (morbi-pi)
-      - name: mainswitch
-        mac: B8:27:EB:7C:A9:36
-        ip: 192.168.1.9
-      #morbis laptop
-      - name: morbi
-        mac: E4:F8:9C:3C:DC:CD
-        ip: 192.168.1.23
-
-    - dnsmasq_no_hosts: true
-    - dnsmasq_addn_hosts:
-      - name: fritzbox
-        ip: 192.168.1.1
-      - name: felix
-        ip: 192.168.1.6
-      - name: labnet
-        ip: 192.168.1.6
-
     - youtubedl_update: true
