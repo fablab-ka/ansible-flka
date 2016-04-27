@@ -1,13 +1,43 @@
 ---
 - hosts: felix
   become: yes
+
   roles:
     - common
     - dnsmasq
     - youtube-dl
+    - samba
+    - nfs
 
   vars_files:
     - vars/network.yml
+    - vars/share.yml
 
   vars:
+    - default_user: fabi
+    - share_path: /srv/public
     - youtubedl_update: true
+
+  pre_tasks:
+    - name: create default user
+      user:
+        name: "{{ default_user }}"
+
+    - name: register default userid
+      command: "id -u {{ default_user }}"
+      register: default_user_uid
+      changed_when: false
+
+    - name: register default groupid
+      command: "id -g {{ default_user }}"
+      register: default_user_gid
+      changed_when: false
+
+    - name: Set share dir permissions
+      file:
+        dest: "{{ share_path }}"
+        state: directory
+        owner: "{{ default_user }}"
+        group: "{{ default_user }}"
+        mode: 0775
+        recurse: yes
