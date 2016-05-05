@@ -1,8 +1,5 @@
 # Fablab Karlsruhe ansible definitions
 
-currently only used for the main server felix.
-
-
 ## General
 
 ```` bash
@@ -15,14 +12,22 @@ vagrant up
 # reprovision test system
 ansible-playbook -i .vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory felix.yml --user=vagrant
 
+# edit vault file
+ansible-vault edit vars/lasersaur.vault.yml
+
 # list all available facts for a host
 ansible -m setup hostname
 ````
 
+## Machines
 
-## Felix (central server)
+### Felix (central server)
 
 ```` bash
-# provision live system
 ansible-playbook -i hosts felix.yml --ask-sudo-pass
+````
+
+### Lasersaur
+```` bash
+ansible-playbook -i hosts lasersaur.yml --ask-vault-pass --ask-sudo-pass
 ````

@@ -13,3 +13,6 @@
 
 - src: https://github.com/geerlingguy/ansible-role-nfs
   name: nfs
+
+- src: https://github.com/morbidick/ansible-role-lasersaur
+  name: lasersaur

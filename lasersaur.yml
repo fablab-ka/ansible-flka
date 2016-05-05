@@ -1,0 +1,19 @@
+---
+- hosts: lasersaur
+  become: yes
+
+  roles:
+    - common
+    - lasersaur
+
+  vars_files:
+    - vars/lasersaur.vault.yml
+
+  vars:
+    - lasersaur_user: fabi
+    - lasersaur_dir: /home/fabi/LaserSaur
+    - lasersaur_config:
+        cookie_key: "{{ lasersaur_cookie_key }}"
+        tolerance: 0.08
+        serial_port: '/dev/ttyACM0'
+        network_port: 80

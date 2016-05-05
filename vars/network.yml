@@ -23,7 +23,7 @@
     ip: 192.168.1.5
   #Lasersaur
   - name: lasersaur
-    mac: C8:A0:30:A5:9E:AF
+    mac: 00:1C:C0:8D:13:D1
     ip: 192.168.1.7
   #Astroprint Server
   - name: grillfackel
