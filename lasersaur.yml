@@ -17,3 +17,4 @@
         tolerance: 0.08
         serial_port: '/dev/ttyACM0'
         network_port: 80
+        use_id_card_access_restriction: true
