@@ -4,13 +4,13 @@
 
 ```` bash
 # get dependencies
-ansible-galaxy install -r requirements.yml -p roles
+ansible-galaxy install -r requirements.yml -p roles --ignore-errors
 
 # start vagrant test system
 vagrant up
 
 # reprovision test system
-ansible-playbook -i .vagrant/provisioners/ansible/inventory/vagrant_ansible_inventory felix.yml --user=vagrant
+vagrant provision
 
 # edit vault file
 ansible-vault edit vars/lasersaur.vault.yml
