@@ -14,7 +14,7 @@
     - lasersaur_dir: /home/fabi/LasaurApp
     - lasersaur_config:
         cookie_key: "{{ lasersaur_cookie_key }}"
-        tolerance: 0.08
+        tolerance: 0.01
         serial_port: '/dev/ttyACM0'
         open_browser: false
         public: true
