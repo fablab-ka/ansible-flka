@@ -8,7 +8,7 @@
 - src: https://github.com/morbidick/ansible-role-youtube-dl
   name: youtube-dl
 
-- src: https://github.com/morbidick/ansible-role-samba
+- src: https://github.com/bertvv/ansible-role-samba
   name: samba
 
 - src: https://github.com/geerlingguy/ansible-role-nfs
