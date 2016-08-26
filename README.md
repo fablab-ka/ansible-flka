@@ -31,3 +31,8 @@ ansible-playbook -i hosts felix.yml --ask-sudo-pass
 ```` bash
 ansible-playbook -i hosts lasersaur.yml --ask-vault-pass --ask-sudo-pass
 ````
+
+### Miscelaneous
+
+* ssh key needs to be authorized
+* sudo and vault password are the usual
