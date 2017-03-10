@@ -1,15 +1,17 @@
 ---
+- samba_guest_account: "{{ default_user }}"
 - samba_users:
   - name: "{{ default_user }}"
     password: "{{ default_user }}"
 - samba_shares:
   - name: public
     path: "{{ share_path }}"
-    public: "yes"
-    writable: true
-    user: "{{ default_user }}"
+    public: true
+    owner: "{{ default_user }}"
     group: "{{ default_user }}"
-    guest_user: "{{ default_user }}"
+    write_list: "+{{ default_user }}"
+    guest_ok: yes
+    writable: yes
 - nfs_exports:
   - name: public
     path: "{{ share_path }}"
