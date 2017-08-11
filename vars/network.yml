@@ -33,8 +33,8 @@
   - name: mainswitch
     mac: B8:27:EB:7C:A9:36
     ip: 192.168.1.9
-  #dell!
-  - name: peter
+  #dell! (grafana, Timeseries...)
+  - name: eye
     mac: 00:19:B9:FA:4B:9D
     ip: 192.168.1.10
   #morbis laptop
