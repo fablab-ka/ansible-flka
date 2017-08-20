@@ -37,6 +37,10 @@
   - name: eye
     mac: 00:19:B9:FA:4B:9D
     ip: 192.168.1.10
+  #labnet bridge 1
+  - name: labnet-pi1
+    mac: b8:27:eb:80:8d:85
+    ip: 192.168.1.11
   #morbis laptop
   - name: morbi
     mac: E4:F8:9C:3C:DC:CD
