@@ -8,6 +8,7 @@
     - youtube-dl
     - samba
     - nfs
+    - mpd
 
   vars_files:
     - vars/network.yml
@@ -16,6 +17,11 @@
   vars:
     - default_user: fabi
     - share_path: /srv/public
+    - mpd_music_directory: "{{ share_path }}/Nutzer"
+    - mpd_audio_devices:
+      - name:   "pulse audio"
+        type:   "pulse"
+
     - youtubedl_update: true
 
   pre_tasks:

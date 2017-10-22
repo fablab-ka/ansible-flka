@@ -1,5 +1,5 @@
 [felix]
-192.168.1.6 ansible_ssh_user=felix
+192.168.1.6 ansible_ssh_user=fabi ansible_python_interpreter=/usr/bin/python3
 
 [lasersaur]
 lasersaur.lab.flka.de ansible_ssh_user=fabi

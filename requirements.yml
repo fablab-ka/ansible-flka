@@ -16,3 +16,6 @@
 
 - src: https://github.com/morbidick/ansible-role-lasersaur
   name: lasersaur
+
+- src: https://github.com/sirboldilox/ansible-role-mpd
+  name: mpd
