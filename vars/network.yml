@@ -33,14 +33,23 @@
   - name: mainswitch
     mac: B8:27:EB:7C:A9:36
     ip: 192.168.1.9
-  #dell! (grafana, Timeseries...)
-  - name: eye
-    mac: 00:19:B9:FA:4B:9D
+  #Backup Synology
+  - name: BACKUP-NAS
+    mac: 00:11:32:01:36:06
     ip: 192.168.1.10
   #labnet bridge 1
   - name: labnet-pi1
     mac: b8:27:eb:80:8d:85
     ip: 192.168.1.11
+  #Media PC Couchecke
+  - name: hasselhoff
+    mac: b8:27:eb:80:8d:66
+    ip: 192.168.1.12
+  #Labtouch
+  - name: labtouch1
+    mac: B8:27:EB:FE:5A:40
+    ip: 192.168.1.13
+    
   #morbis laptop
   - name: morbi
     mac: E4:F8:9C:3C:DC:CD
