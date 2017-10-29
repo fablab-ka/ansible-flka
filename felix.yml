@@ -9,6 +9,7 @@
     - samba
     - nfs
     - mpd
+    - mosquitto
 
   vars_files:
     - vars/network.yml
@@ -21,6 +22,11 @@
     - mpd_audio_devices:
       - name:   "pulse audio"
         type:   "pulse"
+
+    - mosquitto_settings:
+        allow_anonymous: "true"
+        persistence: "true"
+        port: 1883
 
     - youtubedl_update: true
 
