@@ -49,6 +49,10 @@
   - name: labtouch1
     mac: B8:27:EB:FE:5A:40
     ip: 192.168.1.13
+  #Media PC Couchecke
+  - name: Switch-Schrank
+    mac: 50:C7:BF:EE:E4:5C
+    ip: 192.168.1.14
     
   #morbis laptop
   - name: morbi
