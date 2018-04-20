@@ -54,6 +54,11 @@
     mac: 50:C7:BF:EE:E4:5C
     ip: 192.168.1.14
     
+  #HP Pagewide Drucker
+  - name: HP1860247A121D
+    mac: 18:60:24:7A:12:1D
+    ip: 192.168.1.15
+  
   #morbis laptop
   - name: morbi
     mac: E4:F8:9C:3C:DC:CD
