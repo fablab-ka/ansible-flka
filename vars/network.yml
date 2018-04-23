@@ -55,7 +55,7 @@
     ip: 192.168.1.14
     
   #HP Pagewide Drucker
-  - name: HP1860247A121D
+  - name: pagewide
     mac: 18:60:24:7A:12:1D
     ip: 192.168.1.15
   
