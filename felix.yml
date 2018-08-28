@@ -4,7 +4,7 @@
 
   roles:
     - common
-    - dnsmasq
+#    - dnsmasq
     - youtube-dl
     - samba
     - nfs
