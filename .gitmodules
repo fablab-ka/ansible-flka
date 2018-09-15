@@ -1,0 +1,24 @@
+[submodule "ansible-role-common"]
+	path = ansible-role-common
+	url = git@github.com:morbidick/ansible-role-common.git
+[submodule "ansible-role-dnsmasq"]
+	path = ansible-role-dnsmasq
+	url = git@github.com:morbidick/ansible-role-dnsmasq.git
+[submodule "ansible-role-youtube-dl"]
+	path = ansible-role-youtube-dl
+	url = git@github.com:morbidick/ansible-role-youtube-dl.git
+[submodule "ansible-role-samba"]
+	path = ansible-role-samba
+	url = git@github.com:morbidick/ansible-role-samba.git
+[submodule "ansible-role-nfs"]
+	path = ansible-role-nfs
+	url = git@github.com:morbidick/ansible-role-nfs.git
+[submodule "ansible-role-lasersaur"]
+	path = ansible-role-lasersaur
+	url = git@github.com:morbidick/ansible-role-lasersaur.git
+[submodule "ansible-role-mpd"]
+	path = ansible-role-mpd
+	url = git@github.com:sirboldilox/ansible-role-mpd.git
+[submodule "ansible-role-mosquitto"]
+	path = ansible-role-mosquitto
+	url = git@github.com:morbidick/ansible-role-mosquitto.git
