@@ -6,6 +6,9 @@
 # get dependencies
 ansible-galaxy install -r requirements.yml -p roles --ignore-errors
 
+# Clone repo
+git clone --recurse-submodules git@github.com:fablab-ka/ansible-flka.git
+
 # start vagrant test system
 vagrant up
 
